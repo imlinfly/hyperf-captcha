@@ -1,0 +1,29 @@
+{
+  "name": "lynnfly/hyperf-captcha",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Lynnfly\\HyperfCaptcha\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "LynnFly",
+      "email": "fly@eyabc.cn"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "hyperf/config": "~3.0.0",
+    "hyperf/di": "~3.0.0",
+    "hyperf/redis": "^3.0",
+    "ext-redis": "*",
+    "ext-gd": "*",
+    "ext-mbstring": "*"
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Lynnfly\\HyperfCaptcha\\ConfigProvider"
+    }
+  }
+}
